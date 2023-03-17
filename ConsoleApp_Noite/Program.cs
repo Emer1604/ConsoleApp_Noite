@@ -1,8 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ConsoleApp_Noite;
+using ConsoleApp_Noite.Heranca;
 using System;
 
-Console.WriteLine("Hello, World!");
+/*Console.WriteLine("Hello, World!");
 
 Produto p1 = new Produto(1, 10.90M, "Cervejinha");
 
@@ -34,11 +35,39 @@ Console.WriteLine(c2.getEndereco().getNumero());
 Endereco endereco2 = new Endereco(
     "Rua desce e sobe",
     "498",
-    "Monte Alegre",
+    "Nova Pradopolis",
     "14841000",
-    "Guariba",
+    "Pradopolis",
     "SP"
     );
 Console.WriteLine(c2.getEndereco().getRua() + " " + c2.getEndereco().getNumero());
 c2.setEndereco(endereco2);
 Console.WriteLine(c2.getEndereco().getRua() + " " + c2.getEndereco().getNumero());
+*/
+Carro gol = new Carro();
+gol.temMotor = true;
+gol.numeroPortas = 4;
+gol.numeroAssentos = 5;
+gol.fabricante = "Volkswagen";
+gol.cintoSeguranca = true;
+gol.arCodicionado = false;
+
+Bike caloi = new Bike();
+caloi.temMotor = false;
+caloi.numeroPortas = 0;
+caloi.numeroAssentos = 1;
+
+Carro saveiro = new Carro();
+saveiro.fabricante = "Volkswagen";
+
+Carro palio = new Carro();
+palio.fabricante = "Fiat";
+
+Carro uno = new Carro();
+uno.fabricante = "Fiat";
+
+Bike speed = new Bike();
+speed.temMotor = false;
+speed.numeroPortas = 0;
+
+Console.WriteLine(gol);

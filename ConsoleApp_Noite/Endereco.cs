@@ -23,6 +23,8 @@ namespace ConsoleApp_Noite
             Cidade = cidade;
             Estado = estado;
         }
+        
+
 
         public string getRua() { return Rua; }
         public void setRua(string rua) {  Rua = rua; }
