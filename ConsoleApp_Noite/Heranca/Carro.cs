@@ -12,5 +12,8 @@ namespace ConsoleApp_Noite.Heranca
         public bool arCodicionado;
         public string marcaRadio;
         public string fabricante;
+
+        public string ExibirMarca()
+        { return "O fabricante deste veiculo é: " + fabricante; }
     }
 }

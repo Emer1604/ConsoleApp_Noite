@@ -52,11 +52,6 @@ gol.fabricante = "Volkswagen";
 gol.cintoSeguranca = true;
 gol.arCodicionado = false;
 
-Bike caloi = new Bike();
-caloi.temMotor = false;
-caloi.numeroPortas = 0;
-caloi.numeroAssentos = 1;
-
 Carro saveiro = new Carro();
 saveiro.fabricante = "Volkswagen";
 
@@ -66,8 +61,31 @@ palio.fabricante = "Fiat";
 Carro uno = new Carro();
 uno.fabricante = "Fiat";
 
+Bike caloi = new Bike();
+caloi.temMotor = false;
+caloi.numeroPortas = 0;
+caloi.numeroAssentos = 1;
+
 Bike speed = new Bike();
 speed.temMotor = false;
 speed.numeroPortas = 0;
 
-Console.WriteLine(gol);
+Console.WriteLine(gol.ExibirDados());
+Console.WriteLine(speed.ExibirDados());
+
+List<Carro> listaCarros = new List<Carro>();
+listaCarros.Add(gol);
+listaCarros.Add(saveiro);
+listaCarros.Add(palio);
+listaCarros.Add(uno);
+
+Console.WriteLine(listaCarros[0].fabricante);
+listaCarros.Remove(saveiro);
+for(int i=0; i<listaCarros.Count; i++)
+    {
+        Console.WriteLine(listaCarros[i].ExibirDados());
+    }
+foreach(var item in listaCarros)
+    {
+        Console.WriteLine(item.ExibirMarca());
+    }

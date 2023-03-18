@@ -11,5 +11,18 @@ namespace ConsoleApp_Noite.Heranca
         public int numeroAssentos;
         public int numeroPortas;
         public bool temMotor;
+
+        public string ExibirDados()
+        {
+            if (temMotor == true)
+            {
+                return "Com motor " + " Numero de Assentos: " + numeroAssentos + " Numero de Portas: " + numeroPortas;
+            }
+            else
+            {
+                return "Numero de Assentos: " + numeroAssentos + " Numero de Portas: " + numeroPortas;
+            }
+            
+        }
     }
 }
